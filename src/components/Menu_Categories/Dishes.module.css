@@ -1,0 +1,77 @@
+.dishes_page {
+  background-image: url('./main.webp');
+  width: 100%;
+  height: 100vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+  overflow: hidden;
+}
+
+.toApp {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  padding: 0.2rem 0.4rem;
+  border-radius: 20px 10px 10px 20px;
+  transition: all 0.2s ease;
+  position: relative;
+  right: 2rem;
+}
+
+.toBev {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px 20px 20px 10px;
+  transition: all 0.2s ease;
+  position: relative;
+  right: -2rem;
+}
+
+.toApp:hover,
+.toBev:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.toApp:active,
+.toBev:active {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 1365px) {
+  .toBev {
+    margin-right: 3rem;
+    margin-top: 2rem;
+  }
+  .toApp {
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .toApp,
+  .toBev {
+    font-size: 0.7em;
+  }
+}

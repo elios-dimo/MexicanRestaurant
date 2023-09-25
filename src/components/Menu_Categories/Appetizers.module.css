@@ -1,0 +1,62 @@
+.appetizers_page {
+  background-image: url('./appe.webp');
+  width: 100dvw;
+  height: 100dvh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+  overflow: hidden;
+}
+
+.mar {
+  margin-left: 10rem;
+}
+
+.toDishes {
+  /* position: fixed;
+  top: 30%;
+  right: 8%; */
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px 20px 20px 10px;
+  transition: all 0.2s ease;
+  position: relative;
+  right: -2rem;
+}
+
+.toDishes:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.toDishes:active {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 1365px) {
+  .toDishes {
+    margin-right: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .toDishes {
+    font-size: 0.7em;
+  }
+}

@@ -1,0 +1,83 @@
+.footer {
+  width: 100dvw;
+  height: 20dvh;
+  background-color: var(--primary);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 2rem;
+  color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100dvw;
+  gap: 2rem;
+  margin-left: 3rem;
+}
+
+.cont,
+.hours {
+  margin-bottom: 1rem;
+}
+
+.adress,
+.number,
+.mail {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.logo {
+  height: 7rem;
+  width: 8rem;
+}
+
+.days {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer_container {
+    margin-top: 1rem;
+    gap: 0rem;
+    margin-left: 0;
+  }
+
+  .logo {
+    margin-top: 2rem;
+    height: 5rem;
+    width: 6rem;
+  }
+
+  .cont,
+  .hours {
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .number,
+  .mail,
+  .adress {
+    font-size: 0.6rem;
+  }
+  .days {
+    font-size: 0.6rem;
+    margin-bottom: 0.4rem;
+  }
+}
